@@ -8,7 +8,7 @@ export const Route = createRootRoute({
     meta: [
       { charSet: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { title: 'Maplewood Heights Community' },
+      { title: "D'Cendana Chinese Community" },
     ],
   }),
   shellComponent: RootDocument,
@@ -17,20 +17,28 @@ export const Route = createRootRoute({
 function RootDocument({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <head>
-        <HeadContent />
-      </head>
-      <body className="min-h-screen bg-gray-50 text-gray-900">
-        <Header />
-        {children}
-        <footer className="bg-green-900 text-green-100 py-8 mt-16">
-          <div className="max-w-5xl mx-auto px-4 text-center">
-            <p className="font-semibold text-lg">Maplewood Heights Community</p>
-            <p className="text-green-300 text-sm mt-1">Connecting neighbors, building community.</p>
-          </div>
-        </footer>
-        <Scripts />
-      </body>
-    </html>
+  <head>
+    <HeadContent />
+  </head>
+
+  <body className="min-h-screen flex flex-col bg-gray-50 text-gray-900">
+    <Header />
+
+    <main className="flex-1">
+      {children}
+    </main>
+
+    <footer className="bg-red-900 text-blue-100 py-8 mt-16">
+      <div className="max-w-5xl mx-auto px-4 text-center">
+        <p className="font-semibold text-lg">D'Cendana Chinese Community</p>
+        <p className="text-yellow-300 text-sm mt-1">
+          Connecting neighbours, building community.
+        </p>
+      </div>
+    </footer>
+
+    <Scripts />
+  </body>
+</html>
   )
 }
