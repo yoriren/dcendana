@@ -2,4 +2,8 @@
 .netlify
 
 # dependencies
-node_modules
+node_modules/
+
+# build output
+dist/
+build/

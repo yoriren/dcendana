@@ -15,7 +15,7 @@ export function Header() {
     <header className="bg-red-900 text-white shadow-md sticky top-0 z-50">
       <div className="max-w-5xl mx-auto px-4 flex items-center justify-between h-14">
          <Link to="/" className="flex items-center gap-2 font-bold text-lg tracking-tight hover:text-yellow-200 transition">
-          <img src="/public/favicon.ico" alt="logo" className="w-10 h-10 transition transform hover:scale-110" />
+          <img src="/favicon.ico" alt="logo" className="w-10 h-10 transition transform hover:scale-110" />
           <span>D'Cendana Chinese Community</span>
         </Link>
 
